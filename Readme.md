@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Тимур Мирхайдаров](https://up.htmlacademy.ru/htmlcss/27/user/796097).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
