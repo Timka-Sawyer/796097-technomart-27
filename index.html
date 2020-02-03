@@ -10,7 +10,14 @@
         <a href="index.html"><img src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
       </div>
         <ul>
-            <li>Поиск</li>
+            <li>
+              <form action="#" method="POST">
+                <label for="search-up">
+                  Поиск
+                  <input type="text" name="search" id="search-up">
+                </label>
+              </form>
+            </li>
             <li><a href="#">Закладки</a></li>
             <li><a href="#">Корзина</a></li>
             <li><a href="#">Оформить заказ</a></li>
@@ -238,9 +245,33 @@
           заехав в наш офис:
         </p>
         <div>
-          <img src="./img/map.png" width="300" height="158" alt="карта">
+          <img src="./img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8">
         </div>
         <a href="#">Заблудились? Напишите нам!</a>
+        <div class="writeToUs">
+          <form action="#" method="POST">
+            <button class="buttonClose visually-hidden" type="button">Закрыть</button>
+            <p>
+              <label for="writeToUs_name">Ваше имя:</label>
+              <br>
+              <input type="text" name="yourName" id="writeToUs_name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="writeToUs_email">Ваш e-mail:</label>
+              <br>
+              <input type="text" name="yourEmail" id="writeToUs_email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="writeToUs_letter">Текст письма:</label>
+              <br>
+              <textarea name="textLetter" id="writeToUs_letter" cols="30" rows="10" placeholder="Текст письма"></textarea>
+            </p>
+            <div class="bttnSend">
+              <button class="button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+        <div class="bigMap"></div>
       </section>
     </main>
     <footer>
