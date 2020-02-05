@@ -1,0 +1,4 @@
+.logged::after {
+    content: "sddsd";
+    background-image: url("../img/icon/icon-logout.svg");
+}
