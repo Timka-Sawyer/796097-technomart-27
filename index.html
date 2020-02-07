@@ -5,15 +5,15 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header>
-      <div class="logotip">
+    <header class="header">
+      <div class="header-logotip">
         <a href="index.html"><img src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
       </div>
-      <div class="searchForm">
+      <div class="search-form">
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <label hidden class="visually-hidden" for="searchUp">Поиск</label>
+          <label hidden class="visually-hidden" for="search-up">Поиск</label>
           <button type="button"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
-          <input type="text" name="search" id="searchUp" placeholder="Поиск:">
+          <input type="text" name="search" id="search-up" placeholder="Поиск:">
         </form>
       </div>
         <ul>
@@ -30,24 +30,15 @@
             <a href="tel:+78125550555">+7(812)555-05-55</a>
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
-      <div class="userBox">
+      <div class="user-box">
         <div class="login">
           <ul>
             <li><a href="">Войти</a></li>
             <li><a href="">Регистрация</a></li>
           </ul>
         </div>
-        <div class="loged">
-          <a href=""><img src="./img/icon/icon-user.svg" alt="Иконка профиля"></a>
-          <a href="">Равшан Джамшутович</a>
-          <a href=""><img src="./img/icon/icon-logout.svg" alt="Выйти из профиля"></a>
-          <ul>
-              <li><a href="">Мои заказы</a></li>
-              <li><a href="">Личный кабинет</a></li>
-          </ul>
       </div>
-      </div>
-      <nav>
+      <nav class="main-menu">
         <ul>
             <li><a>Главная</a></li>
             <li><a href="">Компания</a></li>
@@ -59,19 +50,19 @@
         </ul>
     </nav>
     </header>
-    <main>
+    <main class="main-content">
       <div class="categorys">
-        <article>
+        <article class="category-item">
           <h2>Материалы</h2>
           <!--Иконку через css-->
           <a href="">На любой вкус</a>
         </article>
-        <article>
+        <article class="category-item">
           <h2>Инструмент</h2>
           <!--Иконку через css-->
           <a href="">На все случаи</a>
         </article>
-        <article>
+        <article class="category-item">
           <h2>Техника</h2>
           <!--Иконку через css-->
           <a href="">Для стройки</a>
@@ -99,30 +90,30 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="category-item">
           <h2>Скидки 50%</h2>
           <!--Иконку через css-->
           <a href="">На 350 товаров</a>
         </article>
-        <article>
+        <article class="category-item">
           <h2>Доставка</h2>
           <!--Иконку через css-->
           <a href="">Бесплатно</a>
         </article>
       </div>
-      <section>
-        <div class="popular">
+      <section class="populars">
+        <div class="popular-item">
           <h2>Популярные товары:</h2>
           <a href="">Все популярные товары</a>
         </div>
         <ul>
           <li>
-            <article>
-              <div class="drillActions">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+            <article class="popular-card">
+              <div class="drill-actions">
+                <a class="add-to-cart" href="">Купить</a>
+                <a class="add-to-marker" href="">В закладки</a>
               </div>
-              <div class="item-image">
+              <div class="card-image">
                 <img src="./img/item-image-bfg9000.jpg" alt="Bosch BFG 9000">
               </div>
               <h3>Перфоратор Bosch BFG 9000</h3>
@@ -131,13 +122,13 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-card">
               <h3>Перфоратор Bosch BFG 3000</h3>
-              <div class="drillActions">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+              <div class="drill-actions">
+                <a class="add-to-cart" href="">Купить</a>
+                <a class="add-to-marker" href="">В закладки</a>
               </div>
-              <div class="item-image">
+              <div class="card-image">
                 <img src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
               </div>
               <p><del>22500 Р.</del></p>
@@ -145,13 +136,13 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-card">
               <h3>Перфоратор Bosch BFG 6000</h3>
-              <div class="drillActions">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+              <div class="drill-actions">
+                <a class="add-to-cart" href="">Купить</a>
+                <a class="add-to-marker" href="">В закладки</a>
               </div>
-              <div class="item-image">
+              <div class="card-image">
                 <img src="./img/item-image-bfg6000.jpg" alt="Bosch BFG 6000">
               </div>
               <p><del>30500 Р.</del></p>
@@ -159,13 +150,13 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="popular-card">
               <h3>Перфоратор Bosch BFG 2000</h3>
-              <div class="drillActions">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+              <div class="drill-actions">
+                <a class="add-to-cart" href="">Купить</a>
+                <a class="add-to-marker" href="">В закладки</a>
               </div>
-              <div class="item-image">
+              <div class="card-image">
                 <img src="./img/item-image-bfg2000.jpg" alt="Bosch BFG 2000">
               </div>
               <a href="">12500 Р.</a>  
@@ -174,7 +165,7 @@
         </ul>
       </section>
       <section>
-        <div class="popular">
+        <div class="popular-brands">
           <h2>Популярные производители:</h2>
           <a href="">Все производители</a>
         </div>
@@ -207,7 +198,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="service">
         <h2>Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!
@@ -247,7 +238,7 @@
             </div>
         </div>
       </section>
-      <section>
+      <section class="about-us">
         <h2>Компания "Техномарт"</h2>
         <p>
           Настоящий мужской шоппинг начинается здесь! Огромныйвыбор товаров для ремонта и
@@ -264,50 +255,50 @@
           <a href="">Подробней о компании</a>
         </p>
       </section>
-      <section>
+      <section class="contact-with-us">
         <h2>Контакты</h2>
         <p>
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <div class="littlMap">
+        <div class="little-map">
           <a href=""><img src="./img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8"></a>
         </div>
         <a href="">Заблудились? Напишите нам!</a>
-        <div class="popup_writeToUs">
-          <form action="" method="POST">
+        <div class="popup-write-to-us">
+          <form action="https://echo.htmlacademy.ru" method="POST">
             <button class="buttonClose" type="button">Закрыть</button>
             <p>
-              <label for="writeToUs_name">Ваше имя:</label>
-              <input type="text" name="yourName" id="writeToUs_name" placeholder="Имя Фамилия">
+              <label for="write-to-us-name">Ваше имя:</label>
+              <input type="text" name="yourName" id="write-to-us-name" placeholder="Имя Фамилия">
             </p>
             <p>
-              <label for="writeToUs_email">Ваш e-mail:</label>
-              <input type="text" name="yourEmail" id="writeToUs_email" placeholder="email@example.com">
+              <label for="write-to-us-email">Ваш e-mail:</label>
+              <input type="text" name="yourEmail" id="write-to-us-email" placeholder="email@example.com">
             </p>
             <p>
-              <label for="writeToUs_letter">Текст письма:</label>
-              <textarea name="textLetter" id="writeToUs_letter" cols="30" rows="10" placeholder="Текст письма"></textarea>
+              <label for="write-to-us-letter">Текст письма:</label>
+              <textarea name="textLetter" id="write-to-us-letter" cols="30" rows="10" placeholder="Текст письма"></textarea>
             </p>
-            <div class="bttnSend">
+            <div class="bttn-send">
               <button class="button" type="submit">Отправить</button>
             </div>
           </form>
         </div>
-        <div class="popup_bigMap">
-          <button class="buttonClose" type="button">Закрыть</button>
+        <div class="popup-big-map">
+          <button class="button-close" type="button">Закрыть</button>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="logotip">
+    <footer class="footer">
+      <div class="bottom-logotip">
           <a href="index.html"><img src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
       </div>
-      <div class="footer_address">
+      <div class="footer-address">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
           <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
       </div>
-      <div class="footer_nav">
+      <div class="footer-nav">
           <ul>
               <li><a href="">Компания</a></li>
               <li><a href="">Новости</a></li>
