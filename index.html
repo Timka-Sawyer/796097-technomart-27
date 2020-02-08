@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-logotip">
+      <div class="logo header-logo">
         <a href="index.html"><img src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
       </div>
       <div class="search-form">
@@ -77,14 +77,14 @@
                 <div class="slide-text">
                   <h2 class="slide-title">Перфораторы</h2>
                   <span>Настоящие мужские игрушки</span>
-                  <a class="bttn" href="catalog.html">Открыть каталог</a>
+                  <a class="slide-button" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
               <div class="slide">
                 <div class="slide-text">
                   <h2 class="slide-title">Дрели</h2>
                   <span>Соседям на радость!</span>
-                  <a class="bttn" href="catalog.html">Открыть каталог</a>
+                  <a class="slide-button" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
             </div>
@@ -108,58 +108,58 @@
         </div>
         <ul>
           <li>
-            <article class="popular-card">
-              <div class="drill-actions">
-                <a class="add-to-cart" href="">Купить</a>
-                <a class="add-to-marker" href="">В закладки</a>
+            <article class="populars card">
+              <div class="card-actions">
+                <a class="card-actions-add" href="">Купить</a>
+                <a class="card-actions-mark" href="">В закладки</a>
               </div>
-              <div class="card-image">
-                <img src="./img/item-image-bfg9000.jpg" alt="Bosch BFG 9000">
+              <div class="card-image-wrap">
+                <img class="card-image" src="./img/item-image-bfg9000.jpg" alt="Bosch BFG 9000">
               </div>
               <h3>Перфоратор Bosch BFG 9000</h3>
-              <p><del>32500 Р.</del></p>
-              <a href="">25500 Р.</a>  
+              <p class="card-price-old"><del>32500 Р.</del></p>
+              <a class="card-price-new" href="">25500 Р.</a>  
             </article>
           </li>
           <li>
-            <article class="popular-card">
+            <article class="populars card">
               <h3>Перфоратор Bosch BFG 3000</h3>
-              <div class="drill-actions">
-                <a class="add-to-cart" href="">Купить</a>
-                <a class="add-to-marker" href="">В закладки</a>
+              <div class="card-actions">
+                <a class="card-actions-add" href="">Купить</a>
+                <a class="card-actions-mark" href="">В закладки</a>
               </div>
-              <div class="card-image">
-                <img src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
+              <div class="card-image-wrap">
+                <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
               </div>
-              <p><del>22500 Р.</del></p>
-              <a href="">15500 Р.</a>  
+              <p class="card-price-old"><del>22500 Р.</del></p>
+              <a class="card-price-new" href="">15500 Р.</a>  
             </article>
           </li>
           <li>
-            <article class="popular-card">
+            <article class="populars card">
               <h3>Перфоратор Bosch BFG 6000</h3>
-              <div class="drill-actions">
-                <a class="add-to-cart" href="">Купить</a>
-                <a class="add-to-marker" href="">В закладки</a>
+              <div class="card-actions">
+                <a class="card-actions-add" href="">Купить</a>
+                <a class="card-actions-mark" href="">В закладки</a>
               </div>
-              <div class="card-image">
-                <img src="./img/item-image-bfg6000.jpg" alt="Bosch BFG 6000">
+              <div class="card-image-wrap">
+                <img class="card-image" src="./img/item-image-bfg6000.jpg" alt="Bosch BFG 6000">
               </div>
-              <p><del>30500 Р.</del></p>
-              <a href="">25500 Р.</a>
+              <p class="card-price-old"><del>30500 Р.</del></p>
+              <a class="card-price-new" href="">25500 Р.</a>
             </article>
           </li>
           <li>
-            <article class="popular-card">
+            <article class="populars card">
               <h3>Перфоратор Bosch BFG 2000</h3>
-              <div class="drill-actions">
-                <a class="add-to-cart" href="">Купить</a>
-                <a class="add-to-marker" href="">В закладки</a>
+              <div class="card-actions">
+                <a class="card-actions-add" href="">Купить</a>
+                <a class="card-actions-mark" href="">В закладки</a>
               </div>
-              <div class="card-image">
-                <img src="./img/item-image-bfg2000.jpg" alt="Bosch BFG 2000">
+              <div class="card-image-wrap">
+                <img class="card-image" src="./img/item-image-bfg2000.jpg" alt="Bosch BFG 2000">
               </div>
-              <a href="">12500 Р.</a>  
+              <a class="card-price-new" class="" href="">12500 Р.</a>  
             </article>
           </li>
         </ul>
@@ -265,33 +265,10 @@
           <a href=""><img src="./img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8"></a>
         </div>
         <a href="">Заблудились? Напишите нам!</a>
-        <div class="popup-write-to-us">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <button class="buttonClose" type="button">Закрыть</button>
-            <p>
-              <label for="write-to-us-name">Ваше имя:</label>
-              <input type="text" name="yourName" id="write-to-us-name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="write-to-us-email">Ваш e-mail:</label>
-              <input type="text" name="yourEmail" id="write-to-us-email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="write-to-us-letter">Текст письма:</label>
-              <textarea name="textLetter" id="write-to-us-letter" cols="30" rows="10" placeholder="Текст письма"></textarea>
-            </p>
-            <div class="bttn-send">
-              <button class="button" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-        <div class="popup-big-map">
-          <button class="button-close" type="button">Закрыть</button>
-        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="bottom-logotip">
+      <div class="logo footer-logo">
           <a href="index.html"><img src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
       </div>
       <div class="footer-address">
@@ -333,5 +310,28 @@
           </div>
       </div>
   </footer>
+  <div class="popup-write-to-us">
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <button class="button-close" type="button">Закрыть</button>
+      <p>
+        <label for="write-to-us-name">Ваше имя:</label>
+        <input type="text" name="yourName" id="write-to-us-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="write-to-us-email">Ваш e-mail:</label>
+        <input type="text" name="yourEmail" id="write-to-us-email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="write-to-us-letter">Текст письма:</label>
+        <textarea name="textLetter" id="write-to-us-letter" cols="30" rows="10" placeholder="Текст письма"></textarea>
+      </p>
+      <div class="popup-button-send">
+        <button class="button" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="popup-big-map">
+    <button class="button-close" type="button">Закрыть</button>
+  </div>
   </body>
 </html>
