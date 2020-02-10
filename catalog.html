@@ -3,38 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
         <div class="logo header-logo">
-            <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт"></a>
+          <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт"></a>
+        </div>
+        <div class="header-top">
+          <div class="search-form">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label hidden class="visually-hidden" for="search-up">Поиск</label>
+              <button class="search-form-button" type="button"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
+              <input type="text" name="search" id="search-up" placeholder="Поиск:">
+            </form>
+            <ul class="header-top-nav-list">
+              <li class="header-top-nav-item"><a class="bookmarks-link" href="">Закладки: 0</a></li>
+              <li class="header-top-nav-item active"><a class="cart-link" href="">Корзина: 0</a></li>
+              <li class="header-top-nav-item"><a class="order-link" href="">Оформить заказ</a></li>
+            </ul>
           </div>
-          <div class="header-top">
-            <div class="search-form">
-              <form action="https://echo.htmlacademy.ru" method="POST">
-                <label hidden class="visually-hidden" for="search-up">Поиск</label>
-                <button class="search-form-button" type="button"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
-                <input type="text" name="search" id="search-up" placeholder="Поиск:">
-              </form>
-              <ul class="header-top-nav-list">
-                <li class="header-top-nav-item"><a class="bookmarks-link" href="">Закладки</a></li>
-                <li class="header-top-nav-item"><a class="cart-link" href="">Корзина</a></li>
-                <li class="header-top-nav-item"><a class="order-link" href="">Оформить заказ</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="header-title">
-            Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта
-          </p>
-          <p class="header-data">
-            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
+        </div>
+        <p class="header-title">
+          Интернет-магазин
+          строительных материалов
+          и инструментов для ремонта
+        </p>
+        <p class="header-data">
+          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
         <div class="user-box">
             <div class="user-box-profile">
                 <a class="profile-icon-link" href=""><img src="./img/icon/icon-user.svg" alt="Иконка профиля"></a>
@@ -50,7 +50,7 @@
             <ul class="main-menu-list">
                 <li class="main-menu-item"><a class="main-menu-item-link" href="./index.html">Главная</a></li>
                 <li class="main-menu-item"><a class="main-menu-item-link" href="">Компания</a></li>
-                <li class="main-menu-item"><a class="main-menu-item-link">Каталог</a></li>
+                <li class="main-menu-item active"><a class="main-menu-item-link">Каталог</a></li>
                 <li class="main-menu-item"><a class="main-menu-item-link" href="">Новости</a></li>
                 <li class="main-menu-item"><a class="main-menu-item-link" href="">Спецпредложения</a></li>
                 <li class="main-menu-item"><a class="main-menu-item-link" href="">Доставка</a></li>
@@ -62,16 +62,18 @@
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Каталог</a></li>
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Инструмент</a></li>
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link">Перфораторы</a></li>
+            <li class="breadcrumbs-item active"><a class="breadcrumbs-link">Перфораторы</a></li>
         </ul>
-        <h1 class="catalog-main-title">Перфораторы</h1>
+        <div class="category-back">
+            <h1 class="catalog-main-title">Перфораторы</h1>
+        </div>
         <div class="filter-title-wrap">
             <h2 class="filter-title">Фильтры:</h2>
         </div>
         <form action="https://echo.htmlacademy.ru" method="POST">
             <div class="price">
                 <fieldset class="price-fieldset">
-                    <legend class="price-legend">Цена:</legend>
+                    <legend class="filter-legend">Цена:</legend>
                     <div class="price-controls">
                         <input class="price-min" type="text" name="price-min" value="0">
                         <span>—</span>
@@ -81,7 +83,7 @@
             </div>
             <div class="brands">
                 <fieldset class="price-fieldset">
-                    <legend class="brands-legend">Производители:</legend>
+                    <legend class="filter-legend">Производители:</legend>
                     <ul class="price-firms-checklist">
                         <li class="price-firm-checklist-item">
                             <input class="price-firms-checkbox" type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
@@ -106,9 +108,8 @@
                     </ul>
                 </fieldset>
             </div>
-            <hr>
             <fieldset class="price-fieldset">
-                <legend class="supply-legend">Питание:</legend>
+                <legend class="filter-legend">Питание:</legend>
                 <ul class="price-supply-checklist">
                     <li class="price-supply-item">
                         <input class="price-supply-radio" type="radio" name="supply" id="radio1" value="accumulator" checked>
@@ -120,12 +121,12 @@
                     </li>
                 </ul>
             </fieldset>
-            <button class="filter-button" type="submit" class="button-filter">Показать</button>
+            <button class="filter-button" type="submit">Показать</button>
         </form>
         <div class="sort">
             <span class="sort-title">Сортировка:</span>
             <ul class="sort-by">
-                <li class="sort-by-item"><a class="sort-by-link" href="">По цене</a></li>
+                <li class="sort-by-item"><a class="sort-by-link active" href="">По цене</a></li>
                 <li class="sort-by-item"><a class="sort-by-link" href="">По типу</a></li>
                 <li class="sort-by-item"><a class="sort-by-link" href="">По функционалу</a></li>
             </ul>
@@ -241,7 +242,7 @@
                 <a class="card-price-new" class="" href="">12500 Р.</a>  
             </article>
             <ul class="pagination">
-                <li class="pagination-item"><a class="pagination-link">1</a></li>
+                <li class="pagination-item active"><a class="pagination-link">1</a></li>
                 <li class="pagination-item"><a class="pagination-link"href="">2</a></li>
                 <li class="pagination-item"><a class="pagination-link"href="">3</a></li>
                 <li class="pagination-item"><a class="pagination-link"href="">Следующая</a></li>
@@ -264,8 +265,8 @@
             <a class="logo-link" href="index.html"><img class="footer-logo-image" src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
         </div>
         <div class="footer-address">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
-            <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
+            <p class="footer-adress-text">г. Санкт-Петербург, ул . Б. Конюшенная, д. 19/8</p> 
+            <p><a class="footer-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
         </div>
         <div class="footer-nav">
             <ul class="footer-nav-top-list">
@@ -282,28 +283,29 @@
                 <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Спецпредложения</a></li>
             </ul>
         </div>
-        <div class="copyright">
+        <div class="footer-bottom">
+          <div class="copyright">
             <p class="copyright-text">
-                © 2010–2017 Компания «Техномарт»
-                Все права защищены
+              © 2010–2017 Компания «Техномарт»
+              Все права защищены
             </p>
+          </div>
+          <div class="socials">
+            <ul class="socials-list">
+              <li class="socials-item"><a class="socials-item-link" href=""><span>Ссылка на страницу Вконтакте</span></a></li>
+              <li class="socials-item"><a class="socials-item-link" href=""><span>Ссылка на страницу в Фейсбук</span></a></li>
+              <li class="socials-item"><a class="socials-item-link" href=""><span>Ссылка на страницу в Инстаграм</span></a></li>
+            </ul>
+          </div>
+          <div class="feedback">
+            <p class="feedback-text">Обратная связь:
+              <a class="feedback-text feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="feedback-text">Разработано —
+              <a class="feedback-text feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
-        <div class="socials">
-          <ul class="socials-list">
-            <li class="socials-item"><a class="socials-item-link" href=""><span>Ссылка на страницу Вконтакте</span></a></li>
-            <li class="socials-item"><a class="socials-item-link" href=""><span>Ссылка на страницу в Фейсбук</span></a></li>
-            <li class="socials-item"><a class="socials-item-link" href=""><span>Ссылка на страницу в Инстаграм</span></a></li>
-          </ul>
-        </div>
-        <div class="feedback">
-          <p class="feedback-text">Обратная связь:
-            <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="feedback-text">Разработано —
-            <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
-        </div>
-      </div>
     </footer>
     <div class="popup-added">
         <button class="button-close" type="button">Закрыть</button>

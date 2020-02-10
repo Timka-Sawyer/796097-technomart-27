@@ -1,4 +1,4 @@
-/*
+
 
 body {
     min-width: 960px;
@@ -17,7 +17,41 @@ a {
     text-decoration: none;
 }
 
- 
+.header-top-nav-list,
+.login-actions,
+.main-menu-list,
+.populars-list,
+.popular-brands-list,
+.service-control-list,
+.about-us-delivery,
+.footer-nav-top-list,
+.footer-nav-bottom-list,
+.copyright-feedback,
+.login-list,
+.breadcrumbs,
+.price-firms-checklist,
+.price-supply-checklist,
+.pagination,
+.sort-by,
+.sort-action,
+.user-box-list,
+.socials-list
+ {
+    list-style: none;
+}
+
+.header {
+    
+  background-color: #f1f5f7;
+}
+
+.main-content {
+    background-color: #ffffff;
+}
+
+.service {
+    background-color: #f2f6f8;
+}
 
 .logo {
     background-color: #ee3643;
@@ -66,7 +100,7 @@ a {
  
 
 .header-top-nav-list {
-    font-family: Cuprum;
+    font-family: "Cuprum", sans-serif;
     font-size: 17px;
 }
 
@@ -103,6 +137,16 @@ a {
 .header-top-nav-item:active {
     background-color: #161d29;
 }
+
+.bookmarks-link,
+.cart-link,
+.order-link {
+    display: block;
+    height: 100%;
+    font-family: "Cuprum", sans-serif;
+    font-size: 17px;
+}
+
 
 .bookmarks-link:active,
 .cart-link:active {
@@ -146,6 +190,27 @@ a {
     color: rgba(0, 0, 0, 0.3);;
 }
 
+
+.profile-name-link {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 21px;
+    color: #000000;
+}
+
+.user-box-link {
+    text-decoration: underline;
+    font-family: "Cuprum", sans-serif;
+    font-size: 16px;
+    color: #32425c;
+}
+
+.breadcrumbs-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
  главное навигационное меню 
 
 .main-menu {
@@ -154,6 +219,11 @@ a {
 
 .main-menu-item-link {
     color: #ffffff;
+}
+
+.main-menu-item {
+    background-color: #32425c;
+    box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .main-menu-item:hover {
@@ -167,10 +237,135 @@ a {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.main-menu-item-link {
+    display: block;
+    height: 100%;
+    font-family: 'Cuprum', sans-serif;
+}
 
+.category-back {
+    width: 940px;
+    height: 89px;
+    background-color: #f2f6f8;
+  }
 
+.catalog-main-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.filter-title-wrap {
+    width: 220px;
+    height: 38px;
+    background-color: #f7f3ec;
+}
+
+.filter-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-legend {
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.label-checkbox {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.label-radio {
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-transform: uppercase;    
+}
+
+.filter-button {
+    width: 140px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sort {
+    width: 700px;
+    height: 38px;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+}
+
+.sort-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+.sort-by-item {
+    display: inline;
+}
+
+.sort-by-link{
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-by-link:hover {
+    color: #000000;
+}
+
+.pagination-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+  
+}
+
+.pagination-item {
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+}
+
+.categorys-item {
+    width: 300px;
+    height: 123px;
+}
+
+.about {
+    background-color: #f4f7f9;
+    color: #000000;
+}
+
+.abput-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 30px;
+}
+
+.about-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
 .categorys-item-title {
-    font-family: Cuprum;
+    font-family: "Cuprum", sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
@@ -179,28 +374,98 @@ a {
 .categorys-item-button {
     width: 135px;
     height: 38px;
-    opacity: 0.1;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .categorys-item-button:hover {
     width: 135px;
     height: 38px;
-    opacity: 0.2;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.categorys-item-button:active {
+    background-color: rgba(0,0,0,0.3);
 }
 
 .categorys-item-link {
-    width: 87px;
-    height: 12px;
-    font-family: Cuprum;
+    display: block;
+    height: 100%;
+    font-family: "Cuprum", sans-serif;
     font-size: 14px;
-    line-height: 1.29;
     letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
+}
+
+.categorys-materials {
+    background-color: #ffbf47;
+}
+
+.categorys-tools {
+    background-color: #3bbce3;
+}
+
+.categorys-tech {
+    background-color: #dc91d8;
+}
+
+.categorys-discount {
+    background-color: #8ed78f;
+}
+
+.categorys-delivery {
+    background-color: #ffc047;
+}
+
+.slide1 {
+    display: block;
+    width: 620px;
+    height: 266px;
+    background-image: url("../img/slide-image2.jpg");
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    display: block;
+    width: 620px;
+    height: 266px;
+    background-image: url("../img/slide-image.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.slide-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.slide-slogan {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.slider-button {
+    display: block;
+    width: 195px;
+    height: 38px;
+    background-color: #ee3643;
+    font-family: "Cuprum", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider-button:hover {
+    background-color: #ca2c37;
+}
+
+.slider-button:active {
+    background-color: #ba2732;
 }
 
 
@@ -212,12 +477,8 @@ a {
 }
 
 .populars-title {
-    font-family: Cuprum;
+    font-family: "Cuprum", sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
     letter-spacing: normal;
     text-align: left;
     text-transform: uppercase;
@@ -231,38 +492,210 @@ a {
 
 
 
-.header-top-nav-list,
-.login-actions,
-.main-menu-list,
-.populars-list,
-.popular-brands-list,
-.service-control-list,
-.about-us-delivery,
-.footer-nav-top-list,
-.footer-nav-bottom-list,
-.copyright-feedback,
-.login-list,
-.breadcrumbs,
-.price-firms-checklist,
-.price-supply-checklist,
-.pagination,
-.sort-by,
-.sort-action,
-.user-box-list
- {
-    list-style: none;
+.card-actions-add {
+    display: block;
+    width: 135px;
+    height: 38px;
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #63a63e;
+    color: #ffffff;
+    font-family: "Cuprum", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.header {
-    
-  background-color: #f1f5f7;
+.card-actions-add:hover {
+    background-color: #5fbb2d;
 }
 
-.main-content {
-    background-color: #909292;
+.card-actions-add:active {
+    background-color: #518534;
 }
 
-.service {
-    background-color: #f2f6f8;
+.card-actions-mark {
+    display: block;
+    width: 130px;
+    height: 35px;
+    background-color: #ffffff;
+    border: solid 3px #63a63e;
+    color: #32425c;
+    font-family: "Cuprum", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
 }
-*/
+
+.card-actions-mark:hover {
+    border: solid 3px #32425c;
+}
+
+.card-actions-mark:active {
+    border: solid 3px #32425c;
+    opacity: 0.3;
+}
+
+.card-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+.card-price-old {
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    color: #a9a9a9;
+}
+
+.card-price-new {
+    display: block;
+    background-image: url("../img/icon/item-button.svg");
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 141px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.popular-brands-list-item {
+    width: 220px;
+    height: 145px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+}
+
+.popular-brands-list-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+    background-color: #ffffff;
+}
+
+.popular-brands-list-item:active {
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    background-color: #ffffff;
+}
+
+.service-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+.service-slogan {
+    font-family: PT Sans;
+    font-size: 13px;
+    color: #000000;
+}
+
+.service-right-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 36px;
+    color: #32425c;
+}
+
+.service-right-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+.service-item {
+    font-family: "Cuprum", sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #32425c;
+}
+
+
+
+.about-us-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+.about-us-text1 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+.about-us-text2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+.about-us-item {
+    font-family: Cuprum;
+    font-size: 18px;
+    text-align: left;
+    color: #000000;
+}
+
+.contact-with-us-title {
+    font-family: Cuprum;
+    font-size: 30px;
+    color: #000000;
+}
+
+.contact-with-us-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+
+
+.footer {
+    background-color: #32425c;
+}
+
+.footer-adress-text {
+    font-family: "Cuprum", sans-serif;
+    font-size: 18px;
+    color: #f3f7f9;
+}
+
+.footer-address-phone {
+    color: #ffffff;;
+}
+
+.footer-nav-top-item-link {
+    font-family: "Cuprum", sans-serif;
+    font-size: 18px;
+    color: #f1f5f7;
+}
+
+.footer-nav-bottom-item-link {
+    font-family: "Cuprum", sans-serif;
+    font-size: 18px;
+    color: #ffd180;
+}
+
+.footer-bottom {
+    background-color: #293449;
+}
+
+.copyright-text {
+    font-family: "Cuprum", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.feedback-text {
+    font-family: "Cuprum", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.feedback-link {
+    color: #ffd180;
+}
+
+
+
+
