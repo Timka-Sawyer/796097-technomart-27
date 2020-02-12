@@ -9,32 +9,41 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo header-logo">
-        <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт"></a>
-      </div>
       <div class="header-top">
-        <div class="search-form">
-          <form action="https://echo.htmlacademy.ru" method="POST">
+        <a class="header-logo-link" href="index.html">
+            <img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт">
+        </a>
+        <form action="https://echo.htmlacademy.ru" method="POST">
             <label hidden class="visually-hidden" for="search-up">Поиск</label>
-            <button class="search-form-button" type="button"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
+            <button class="search-form-button" type="submit"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
             <input type="text" name="search" id="search-up" placeholder="Поиск:">
-          </form>
-          <ul class="header-top-nav-list">
-            <li class="header-top-nav-item"><a class="bookmarks-link" href="">Закладки: 0</a></li>
-            <li class="header-top-nav-item"><a class="cart-link" href="">Корзина: 0</a></li>
-            <li class="header-top-nav-item"><a class="order-link" href="">Оформить заказ</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="header-title">
-        Интернет-магазин
-        строительных материалов
-        и инструментов для ремонта
-      </p>
-      <p class="header-data">
-        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
+        </form>
+        <ul class="header-top-nav-list">
+            <li class="header-top-nav-item">
+                <a class="bookmarks-link" href="">
+                    Закладки: <span class="bookmarks-number">0</span>
+                </a>
+            </li>
+            <li class="header-top-nav-item active">
+                <a class="cart-link" href="">
+                    Корзина: <span class="cart-number">0</span>
+                </a>
+            </li>
+            <li class="header-top-nav-item">
+                <a class="order-link" href="">Оформить заказ</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <p class="header-title">
+      Интернет-магазин
+      строительных материалов
+      и инструментов для ремонта
+    </p>
+    <p class="header-data">
+      <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    </p>
       <div class="user-box">
         <div class="user-box-login">
           <ul class="login-list">
@@ -282,9 +291,9 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="logo footer-logo">
-          <a class="logo-link" href="index.html"><img class="footer-logo-image" src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт"></a>
-      </div>
+      <a class="footer-logo-link" href="index.html">
+        <img class="footer-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт">
+      </a>
       <div class="footer-address">
           <p class="footer-adress-text">г. Санкт-Петербург, ул . Б. Конюшенная, д. 19/8</p> 
           <p><a class="footer-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
@@ -335,16 +344,16 @@
         <label for="write-to-us-name">Ваше имя:</label>
         <input type="text" name="yourName" id="write-to-us-name" placeholder="Имя Фамилия">
       </p>
-      <p>
+      <p class="write-to-us-text">
         <label for="write-to-us-email">Ваш e-mail:</label>
         <input type="text" name="yourEmail" id="write-to-us-email" placeholder="email@example.com">
       </p>
-      <p>
+      <p class="write-to-us-text">
         <label for="write-to-us-letter">Текст письма:</label>
         <textarea name="textLetter" id="write-to-us-letter" cols="30" rows="10" placeholder="Текст письма"></textarea>
       </p>
       <div class="popup-button-send">
-        <button class="button" type="submit">Отправить</button>
+        <button class="slider-button" type="submit">Отправить</button>
       </div>
     </form>
   </div>
