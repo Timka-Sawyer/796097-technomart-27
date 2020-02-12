@@ -135,6 +135,7 @@ a {
     height: 100%;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
+    font-weight: normal;
     line-height: 18px;
 }
 
@@ -143,6 +144,8 @@ a {
     height: 100%;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
     line-height: 18px;
 }
 
@@ -151,6 +154,8 @@ a {
     height: 100%;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
     line-height: 18px;
 }
 
@@ -167,12 +172,16 @@ a {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: italic;
     font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
     line-height: 23px;
 }
 
 .header-phone {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
     letter-spacing: 0.42px;
     color: #e9292a;
 }
@@ -180,6 +189,9 @@ a {
 .header-data {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     text-align: center;
     color: #32425c;
@@ -190,6 +202,9 @@ a {
 .login-item-link {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 21px;
     color: #000000;
 }
@@ -206,6 +221,9 @@ a {
 .profile-name-link {
     font-family: 'Cuprum', "Arial", sans-serif;
     font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 21px;
     color: #000000;
 }
@@ -214,6 +232,9 @@ a {
     text-decoration: underline;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #32425c;
 }
@@ -221,6 +242,9 @@ a {
 .breadcrumbs-link {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
@@ -244,6 +268,9 @@ a {
 .main-menu-item:hover {
     background-color: #293449;
     font-family: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     color: #ffffff;
 }
 
@@ -256,6 +283,9 @@ a {
     display: block;
     height: 100%;
     font-family: 'Cuprum', "Arial", sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
 }
 
 .catalog-title-wrap {
@@ -267,6 +297,9 @@ a {
 .catalog-main-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 30px;
     color: #32425c;
     text-transform: uppercase;
@@ -289,8 +322,11 @@ a {
 .filter-legend {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 17px;
-    line-height: 30px;
     font-weight: bold;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 30px;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
@@ -299,6 +335,9 @@ a {
 .label-checkbox {
   font-family: "PT Sans", "Arial Narrow", sans-serif;
   font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
@@ -319,6 +358,9 @@ a {
     background-color: #ffffff;
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     text-align: center;
     color: #000000;
@@ -347,6 +389,9 @@ a {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
     line-height: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -357,6 +402,9 @@ a {
 .pagination-link {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     text-align: center;
     color: #000000;
@@ -387,12 +435,19 @@ a {
 .about-text {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #000000;
 }
+
 .categorys-item-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 30px;
     font-weight: bold;
     color: #ffffff;
@@ -420,6 +475,9 @@ a {
     height: 100%;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     letter-spacing: normal;
     text-align: center;
@@ -469,6 +527,9 @@ a {
 .slide-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 36px;
     color: #ffffff;
 }
@@ -476,6 +537,9 @@ a {
 .slide-slogan {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #ffffff;
 }
@@ -487,6 +551,9 @@ a {
     background-color: #ee3643;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #ffffff;
     text-align: center;
@@ -512,16 +579,13 @@ a {
 .populars-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 30px;
-    letter-spacing: normal;
     text-align: left;
     text-transform: uppercase;
     color: #32425c;
-}
-
-.button {
-    background-color: #ee3643;
-    text-transform: uppercase;
 }
 
 
@@ -535,6 +599,9 @@ a {
     color: #ffffff;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -557,6 +624,9 @@ a {
     color: #32425c;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -574,8 +644,10 @@ a {
 .card-title {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 18px;
-    line-height: 20px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
     color: #000000;
 }
 
@@ -583,6 +655,8 @@ a {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 17px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #a9a9a9;
 }
@@ -597,6 +671,8 @@ a {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 17px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #ffffff;
     text-align: center;
@@ -624,6 +700,9 @@ a {
 .service-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 30px;
     color: #000000;
 }
@@ -631,6 +710,9 @@ a {
 .service-slogan {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #000000;
 }
@@ -638,6 +720,9 @@ a {
 .service-right-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 36px;
     color: #32425c;
 }
@@ -645,6 +730,9 @@ a {
 .service-right-text {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #000000;
 }
@@ -654,6 +742,8 @@ a {
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
     color: #32425c;
 }
 
@@ -662,6 +752,9 @@ a {
 .about-us-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 30px;
     color: #000000;
 }
@@ -669,6 +762,9 @@ a {
 .about-us-text-1 {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #000000;
 }
@@ -676,6 +772,9 @@ a {
 .about-us-text-2 {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #000000;
 }
@@ -683,6 +782,9 @@ a {
 .about-us-item {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 20px;
     text-align: left;
     color: #000000;
@@ -691,6 +793,9 @@ a {
 .contact-with-us-title {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 30px;
     color: #000000;
 }
@@ -698,6 +803,9 @@ a {
 .contact-with-us-text {
     font-family: "PT Sans", "Arial Narrow", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #000000;
 }
@@ -711,6 +819,9 @@ a {
 .footer-adress-text {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #f3f7f9;
 }
@@ -722,6 +833,9 @@ a {
 .footer-nav-top-item-link {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #f1f5f7;
 }
@@ -729,6 +843,9 @@ a {
 .footer-nav-bottom-item-link {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 24px;
     color: #ffd180;
 }
@@ -740,6 +857,9 @@ a {
 .copyright-text {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #ffffff;
 }
@@ -747,6 +867,9 @@ a {
 .feedback-text {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #ffffff;
 }
@@ -758,6 +881,9 @@ a {
 .write-to-us-text {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 18px;
     color: #000000;
 }
@@ -769,10 +895,14 @@ a {
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
-.button-light {
+.popup-added-button-light {
     color: #000000;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-transform: uppercase;
     line-height: 18px;
     background-color: #ffffff;
 }
@@ -780,6 +910,9 @@ a {
 .popup-added-title {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 30px;
   text-align: center;
   color: #000000;
