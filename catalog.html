@@ -9,22 +9,31 @@
   </head>
   <body>
     <header class="header">
-        <div class="logo header-logo">
-          <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт"></a>
-        </div>
         <div class="header-top">
-          <div class="search-form">
+            <a class="header-logo-link" href="index.html">
+                <img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт">
+            </a>
             <form action="https://echo.htmlacademy.ru" method="POST">
-              <label hidden class="visually-hidden" for="search-up">Поиск</label>
-              <button class="search-form-button" type="button"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
-              <input type="text" name="search" id="search-up" placeholder="Поиск:">
+                <label hidden class="visually-hidden" for="search-up">Поиск</label>
+                <button class="search-form-button" type="submit"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
+                <input type="text" name="search" id="search-up" placeholder="Поиск:">
             </form>
             <ul class="header-top-nav-list">
-              <li class="header-top-nav-item"><a class="bookmarks-link" href="">Закладки: 0</a></li>
-              <li class="header-top-nav-item active"><a class="cart-link" href="">Корзина: 0</a></li>
-              <li class="header-top-nav-item"><a class="order-link" href="">Оформить заказ</a></li>
+                <li class="header-top-nav-item">
+                    <a class="bookmarks-link" href="">
+                        Закладки: <span class="bookmarks-number">0</span>
+                    </a>
+                </li>
+                <li class="header-top-nav-item active">
+                    <a class="cart-link" href="">
+                        Корзина: <span class="cart-number">0</span>
+                    </a>
+                </li>
+                <li class="header-top-nav-item">
+                    <a class="order-link" href="">Оформить заказ</a>
+                </li>
             </ul>
-          </div>
+        </div>
         </div>
         <p class="header-title">
           Интернет-магазин
@@ -64,7 +73,7 @@
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Инструмент</a></li>
             <li class="breadcrumbs-item active"><a class="breadcrumbs-link">Перфораторы</a></li>
         </ul>
-        <div class="category-back">
+        <div class="category-title-wrap">
             <h1 class="catalog-main-title">Перфораторы</h1>
         </div>
         <div class="filter-title-wrap">
@@ -249,7 +258,7 @@
             </ul>
         </section>
         <section class="about">
-            <h2 class="abput-title">Пара слов о перфораторах</h2>
+            <h2 class="about-title">Пара слов о перфораторах</h2>
             <p class="about-text">
                 Перфоратор — универсальный строительный инструмент.
                 Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
