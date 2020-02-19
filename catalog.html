@@ -10,14 +10,14 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <div class="conteiner flex">
+        <div class="conteiner header-top-wrapper">
           <a class="header-logo-link" href="index.html">
               <img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт">
           </a>
           <form action="https://echo.htmlacademy.ru" method="POST">
               <label hidden class="visually-hidden" for="search-up">Поиск</label>
               <button class="search-form-button" type="submit"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
-              <input type="text" name="search" id="search-up" placeholder="Поиск:">
+              <input class="searche-top" type="text" name="search" id="search-up" placeholder="Поиск:">
           </form>
           <ul class="header-top-nav-list">
               <li class="header-top-nav-item">
@@ -27,7 +27,7 @@
               </li>
               <li class="header-top-nav-item active">
                   <a class="cart-link" href="">
-                      Корзина: <span class="cart-number">0</span>
+                      Корзина: <span class="cart-number">10</span>
                   </a>
               </li>
               <li class="header-top-nav-item">
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="header-bottom">
-        <div class="conteiner flex">
+        <div class="conteiner header-bottom-wrapper">
           <p class="header-title">
             Интернет-магазин
             строительных материалов
@@ -48,15 +48,15 @@
             <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-          <div class="user-box">
-            <div class="user-box-profile">
+          <div class="user-wrapper">
+            <div class="user-wrapper-profile">
                 <a class="profile-icon-link" href=""><img src="./img/icon/icon-user.svg" alt="Иконка профиля"></a>
                 <a class="profile-name-link" href="">Равшан Джамшутович</a>
                 <a class="profile-logout" href=""><img src="./img/icon/icon-logout.svg" alt="Выйти из профиля"></a>
             </div>
-            <ul class="user-box-list">
-                <li class="user-box-item"><a class="user-box-link" href="">Мои заказы</a></li>
-                <li class="user-box-item"><a class="user-box-link" href="">Личный кабинет</a></li>
+            <ul class="user-wrapper-list">
+                <li class="user-wrapper-item"><a class="user-wrapper-link" href="">Мои заказы</a></li>
+                <li class="user-wrapper-item"><a class="user-wrapper-link" href="">Личный кабинет</a></li>
             </ul>
         </div>
         </div>
@@ -100,64 +100,62 @@
                 </ul>
             </div>
         </div>
-        <div class="work-box">
-        <div class="filter-box">
-            <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="filter-and-catalog-wrapper">
+        <div class="filter-wrapper">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
                 <div class="price">
                     <fieldset class="price-fieldset">
                         <legend class="filter-legend">Цена:</legend>
-                        <div class="price-controls">
-                            <input class="price-min" type="text" name="price-min" value="0">
+                        <div class="filter-controls">
+                            <input class="form-min" type="text" name="form-min" value="0">
                             <span>—</span>
-                            <input class="price-max" type="text" name="price-max" value="30000">
+                            <input class="form-max" type="text" name="form-max" value="30000">
                         </div>
                     </fieldset>
                 </div>
-                <div class="brands">
-                    <fieldset class="price-fieldset">
-                        <legend class="filter-legend">Производители:</legend>
-                        <ul class="price-firms-checklist">
-                            <li class="price-firm-checklist-item">
-                                <input class="price-firms-checkbox" type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
-                                <label class="label-checkbox" for="filter-bosch">Bosch</label>
-                            </li>
-                            <li class="price-firm-checklist-item">
-                                <input class="price-firms-checkbox" type="checkbox" name="interscol" id="filter-interscol" value="Интерскол">
-                                <label class="label-checkbox" for="filter-interscol">Интерскол</label>
-                            </li>
-                            <li class="price-firm-checklist-item">
-                                <input class="price-firms-checkbox" type="checkbox" name="makita" id="filter-makita" value="Makita" checked>
-                                <label class="label-checkbox" for="filter-makita">Makita</label>
-                            </li>
-                            <li class="price-firm-checklist-item">
-                                <input class="price-firms-checkbox" type="checkbox" name="dewalt" id="filter-dewalt" value="Dewalt">
-                                <label class="label-checkbox" for="filter-dewalt">Dewalt</label>
-                            </li>
-                            <li class="price-firm-checklist-item">
-                                <input class="price-firms-checkbox" type="checkbox" name="hitachi" id="filter-hitachi" value="Hitachi">
-                                <label class="label-checkbox" for="filter-hitachi">Hitachi</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
-                <fieldset class="price-fieldset">
-                    <legend class="filter-legend">Питание:</legend>
-                    <ul class="price-supply-checklist">
-                        <li class="price-supply-item">
-                            <input class="price-supply-radio" type="radio" name="supply" id="radio1" value="accumulator" checked>
-                            <label class="label-radio" for="radio1">Аккумуляторные</label>
+                <fieldset class="filter-fieldset">
+                    <legend class="filter-legend">Производители:</legend>
+                    <ul class="filter-checklist">
+                        <li class="checklist-item">
+                            <input class="filter-checkbox" type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
+                            <label class="filter-label-checkbox" for="filter-bosch">Bosch</label>
                         </li>
-                        <li class="price-supply-item">
-                            <input class="price-supply-radio" type="radio" name="supply" id="radio2" value="lan">
-                            <label class="label-radio" for="radio2">Сетевые</label>
+                        <li class="checklist-item">
+                            <input class="filter-checkbox" type="checkbox" name="interscol" id="filter-interscol" value="Интерскол">
+                            <label class="filter-label-checkbox" for="filter-interscol">Интерскол</label>
+                        </li>
+                        <li class="checklist-item">
+                            <input class="filter-checkbox" type="checkbox" name="makita" id="filter-makita" value="Makita" checked>
+                            <label class="filter-label-checkbox" for="filter-makita">Makita</label>
+                        </li>
+
+                        <li class="checklist-item">
+                            <input class="filter-checkbox" type="checkbox" name="dewalt" id="filter-dewalt" value="Dewalt">
+                            <label class="filter-label-checkbox" for="filter-dewalt">Dewalt</label>
+                        </li>
+                        <li class="checklist-item">
+                            <input class="filter-checkbox" type="checkbox" name="hitachi" id="filter-hitachi" value="Hitachi">
+                            <label class="filter-label-checkbox" for="filter-hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-fieldset">
+                    <legend class="filter-legend">Питание:</legend>
+                    <ul class="filter-checklist">
+                        <li class="filter-supply-item">
+                            <input class="filter-radio" type="radio" name="supply" id="radio1" value="accumulator" checked>
+                            <label class="filter-label-radio" for="radio1">Аккумуляторные</label>
+                        </li>
+                        <li class="filter-supply-item">
+                            <input class="filter-radio" type="radio" name="supply" id="radio2" value="lan">
+                            <label class="filter-label-radio" for="radio2">Сетевые</label>
                         </li>
                     </ul>
                 </fieldset>
                 <button class="filter-button" type="submit">Показать</button>
             </form>
         </div>
-        <div class="catalog-box">
-            
+        <div class="catalog-wrapper">
             <section class="catalog">
                 <article class="catalog card">
                     <h3 class="card-title">Перфоратор Bosch BFG 3000</h3>
@@ -264,13 +262,13 @@
                     </div>
                     <a class="card-price-new" class="" href="">12500 Р.</a>  
                 </article>
-                <ul class="pagination">
-                    <li class="pagination-item active"><a class="pagination-link">1</a></li>
-                    <li class="pagination-item"><a class="pagination-link"href="">2</a></li>
-                    <li class="pagination-item"><a class="pagination-link"href="">3</a></li>
-                    <li class="pagination-item"><a class="pagination-link"href="">Следующая</a></li>
-                </ul>
             </section>
+            <ul class="pagination">
+                <li class="pagination-item active"><a class="pagination-link">1</a></li>
+                <li class="pagination-item"><a class="pagination-link"href="">2</a></li>
+                <li class="pagination-item"><a class="pagination-link"href="">3</a></li>
+                <li class="pagination-item"><a class="pagination-link"href="">Следующая</a></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -312,7 +310,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="conteiner flex">
+          <div class="conteiner footer-bottom-wrapper">
             <p class="copyright-text">
               © 2010–2017 Компания «Техномарт»
               Все права защищены
