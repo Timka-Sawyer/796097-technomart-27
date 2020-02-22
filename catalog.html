@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -44,15 +43,14 @@
             строительных материалов
             и инструментов для ремонта
           </p>
-          <p class="header-data">
+          <div class="header-data">
             <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
           <div class="user-wrapper">
             <div class="user-profile">
-                <a class="profile-icon-link" href=""><img src="./img/icon/icon-user.svg" alt="Иконка профиля"></a>
                 <a class="profile-name-link" href="">Равшан Джамшутович</a>
-                <a class="profile-logout" href=""><img src="./img/icon/icon-logout.svg" alt="Выйти из профиля"></a>
+                <a class="profile-logout" href=""></a>
             </div>
             <ul class="user-list">
                 <li class="user-wrapper-item"><a class="user-link" href="">Мои заказы</a></li>
@@ -158,7 +156,6 @@
         <div class="catalog-wrapper">
             <section class="catalog">
                 <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 3000</h3>
                     <div class="card-actions">
                         <a class="card-actions-add" href="">Купить</a>
                         <a class="card-actions-mark" href="">В закладки</a>
@@ -166,34 +163,24 @@
                     <div class="card-image-wrap">
                         <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
                     </div>
-                    <p class="card-price-old"><del>22500 Р.</del></p>
-                    <a class="card-price-new" href="">15500 Р.</a>  
+                    <div class="card-title">Перфоратор Bosch BFG 3000</div>
+                    <div class="card-price-old">22500 Р.</div>
+                    <div class="card-price-new" href="">15500 Р.</div>  
                 </article>
                 <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 6000</h3>
                     <div class="card-actions">
                         <a class="card-actions-add" href="">Купить</a>
                         <a class="card-actions-mark" href="">В закладки</a>
                     </div>
                     <div class="card-image-wrap">
-                        <img class="card-image" src="./img/item-image-bfg6000.jpg" alt="Bosch BFG 6000">
+                        <img class="card-image" src="./img/bfg6000.jpg" alt="Bosch BFG 3000">
                     </div>
-                    <p class="card-price-old"><del>30500 Р.</del></p>
-                    <a class="card-price-new" href="">25500 Р.</a>  
+                    <div class="card-title">Перфоратор BOSCH BFG 6000</div>
+                    <div class="card-price-old">30500 Р.</div>
+                    <div class="card-price-new" href="">25500 Р.</div>  
                 </article>
                 <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 2000</h3>
-                    <div class="card-actions">
-                        <a class="card-actions-add" href="">Купить</a>
-                        <a class="card-actions-mark" href="">В закладки</a>
-                    </div>
-                    <div class="card-image-wrap">
-                        <img class="card-image" src="./img/item-image-bfg2000.jpg" alt="Bosch BFG 2000">
-                    </div>
-                    <a class="card-price-new" href="">12500 Р.</a>
-                </article>
-                <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 3000</h3>
+                    <div class="flag flag-new">новинка</div>
                     <div class="card-actions">
                         <a class="card-actions-add" href="">Купить</a>
                         <a class="card-actions-mark" href="">В закладки</a>
@@ -201,34 +188,11 @@
                     <div class="card-image-wrap">
                         <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
                     </div>
-                    <p class="card-price-old"><del>22500 Р.</del></p>
-                    <a class="card-price-new" href="">15500 Р.</a>  
+                    <div class="card-title">Перфоратор BOSCH BFG 2000</div>
+                    <div class="card-price-old"></div>
+                    <div class="card-price-new" href="">12500 Р.</div>  
                 </article>
                 <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 6000</h3>
-                    <div class="card-actions">
-                        <a class="card-actions-add" href="">Купить</a>
-                        <a class="card-actions-mark" href="">В закладки</a>
-                    </div>
-                    <div class="card-image-wrap">
-                        <img class="card-image" src="./img/item-image-bfg6000.jpg" alt="Bosch BFG 6000">
-                    </div>
-                    <p class="card-price-old"><del>30500 Р.</del></p>
-                    <a class="card-price-new" href="">25500 Р.</a>  
-                </article>
-                <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 2000</h3>
-                    <div class="card-actions">
-                        <a class="card-actions-add" href="">Купить</a>
-                        <a class="card-actions-mark" href="">В закладки</a>
-                    </div>
-                    <div class="card-image-wrap">
-                        <img class="card-image" src="./img/item-image-bfg2000.jpg" alt="Bosch BFG 2000">
-                    </div>
-                    <a class="card-price-new" href="">12500 Р.</a>  
-                </article>
-                <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 3000</h3>
                     <div class="card-actions">
                         <a class="card-actions-add" href="">Купить</a>
                         <a class="card-actions-mark" href="">В закладки</a>
@@ -236,31 +200,71 @@
                     <div class="card-image-wrap">
                         <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
                     </div>
-                    <p class="card-price-old"><del>22500 Р.</del></p>
-                    <a class="card-price-new" href="">15500 Р.</a>
+                    <div class="card-title">Перфоратор Bosch BFG 3000</div>
+                    <div class="card-price-old">22500 Р.</div>
+                    <div class="card-price-new" href="">15500 Р.</div>  
                 </article>
                 <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 6000</h3>
+                    <div class="flag flag-new">новинка</div>
                     <div class="card-actions">
                         <a class="card-actions-add" href="">Купить</a>
                         <a class="card-actions-mark" href="">В закладки</a>
                     </div>
                     <div class="card-image-wrap">
-                        <img class="card-image" src="./img/item-image-bfg6000.jpg" alt="Bosch BFG 6000">
+                        <img class="card-image" src="./img/bfg6000.jpg" alt="Bosch BFG 3000">
                     </div>
-                    <p class="card-price-old"><del>30500 Р.</del></p>
-                    <a class="card-price-new" href="">25500 Р.</a>  
+                    <div class="card-title">Перфоратор BOSCH BFG 6000</div>
+                    <div class="card-price-old">30500 Р.</div>
+                    <div class="card-price-new" href="">25500 Р.</div>  
                 </article>
                 <article class="card">
-                    <h3 class="card-title">Перфоратор Bosch BFG 2000</h3>
                     <div class="card-actions">
                         <a class="card-actions-add" href="">Купить</a>
                         <a class="card-actions-mark" href="">В закладки</a>
                     </div>
                     <div class="card-image-wrap">
-                        <img class="card-image" src="./img/item-image-bfg2000.jpg" alt="Bosch BFG 2000">
+                        <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
                     </div>
-                    <a class="card-price-new" class="" href="">12500 Р.</a>  
+                    <div class="card-title">Перфоратор BOSCH BFG 2000</div>
+                    <div class="card-price-old"></div>
+                    <div class="card-price-new" href="">12500 Р.</div>  
+                </article>
+                <article class="card">
+                    <div class="flag flag-new">новинка</div>
+                    <div class="card-actions">
+                        <a class="card-actions-add" href="">Купить</a>
+                        <a class="card-actions-mark" href="">В закладки</a>
+                    </div>
+                    <div class="card-image-wrap">
+                        <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
+                    </div>
+                    <div class="card-title">Перфоратор Bosch BFG 3000</div>
+                    <div class="card-price-old">22500 Р.</div>
+                    <div class="card-price-new" href="">15500 Р.</div>  
+                </article>
+                <article class="card">
+                    <div class="card-actions">
+                        <a class="card-actions-add" href="">Купить</a>
+                        <a class="card-actions-mark" href="">В закладки</a>
+                    </div>
+                    <div class="card-image-wrap">
+                        <img class="card-image" src="./img/bfg6000.jpg" alt="Bosch BFG 3000">
+                    </div>
+                    <div class="card-title">Перфоратор BOSCH BFG 6000</div>
+                    <div class="card-price-old">30500 Р.</div>
+                    <div class="card-price-new" href="">25500 Р.</div>  
+                </article>
+                <article class="card">
+                    <div class="card-actions">
+                        <a class="card-actions-add" href="">Купить</a>
+                        <a class="card-actions-mark" href="">В закладки</a>
+                    </div>
+                    <div class="card-image-wrap">
+                        <img class="card-image" src="./img/item-image-bfg3000.jpg" alt="Bosch BFG 3000">
+                    </div>
+                    <div class="card-title">Перфоратор BOSCH BFG 2000</div>
+                    <div class="card-price-old"></div>
+                    <div class="card-price-new" href="">12500 Р.</div>  
                 </article>
             </section>
             <ul class="pagination">
@@ -287,48 +291,49 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-top conteiner">
-          <div class="footer-address">
-            <a class="footer-logo-link" href="index.html"><img class="footer-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт"></a>
-            <p class="footer-adress-text">г. Санкт-Петербург, ул . Б. Конюшенная, д. 19/8</p> 
-            <p><a class="footer-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
-          </div>
-          <div class="footer-nav">
-              <ul class="footer-nav-top-list">
-                  <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Компания</a></li>
-                  <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Новости</a></li>
-                  <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Каталог</a></li>
-                  <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Доставка</a></li>
-                  <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Контакты</a></li>
-              </ul>
-              <ul class="footer-nav-bottom-list">
-                  <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Материалы</a></li>
-                  <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Техника</a></li>
-                  <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Инструмент</a></li>
-                  <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Спецпредложения</a></li>
-              </ul>
-          </div>
+        <div class="conteiner">
+            <div class="footer-top">
+                <div class="footer-address">
+                    <a class="footer-logo-link" href="index.html"><img class="footer-logo-image" src="./img/icon/bottom-logo.svg" width="138px" height="23px" alt="Логотип магазина Техномарт"></a>
+                    <p class="footer-adress-text">г. Санкт-Петербург, ул . Б. Конюшенная, д. 19/8 <a class="footer-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-top-list">
+                        <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Компания</a></li>
+                        <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Новости</a></li>
+                        <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Каталог</a></li>
+                        <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Доставка</a></li>
+                        <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Контакты</a></li>
+                    </ul>
+                    <ul class="footer-nav-bottom-list">
+                        <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Материалы</a></li>
+                        <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Техника</a></li>
+                        <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Инструмент</a></li>
+                        <li class="footer-nav-bottom-item"><a class="footer-nav-bottom-item-link" href="">Спецпредложения</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
-          <div class="conteiner footer-bottom-wrapper">
-            <p class="copyright-text">
-              © 2010–2017 Компания «Техномарт»
-              Все права защищены
-            </p>
-            <ul class="socials-list">
-              <li class="socials-item"><a class="socials-item-link" href=""><img src="./img/icon/vk-icon.svg" alt="Мы вконтакте"></a></li>
-              <li class="socials-item"><a class="socials-item-link" href=""><img src="./img/icon/fb-icon.svg" alt="Мы в фейсбуке"></a></li>
-              <li class="socials-item"><a class="socials-item-link" href=""><img src="./img/icon/insta-icon.svg" alt="Мы в инстаграмме"></a></li>
-            </ul>
-              <p class="feedback-text">Обратная связь:
-                <a class="feedback-text feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-              <p class="feedback-text">Разработано —
-                <a class="feedback-text feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-              </p>
-          </div>
+            <div class="conteiner footer-bottom-wrapper">
+                <p class="copyright-text">
+                    © 2010–2017 Компания «Техномарт»
+                    Все права защищены
+                </p>
+                <ul class="socials-list">
+                    <li class="socials-item"><a class="socials-item-link" href=""><img src="./img/icon/vk-icon.svg" alt="Мы вконтакте"></a></li>
+                    <li class="socials-item"><a class="socials-item-link" href=""><img src="./img/icon/fb-icon.svg" alt="Мы в фейсбуке"></a></li>
+                    <li class="socials-item"><a class="socials-item-link" href=""><img src="./img/icon/insta-icon.svg" alt="Мы в инстаграмме"></a></li>
+                </ul>
+                <p class="feedback-text">Обратная связь:
+                    <a class="feedback-text feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+                <p class="feedback-text">Разработано —
+                    <a class="feedback-text feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </p>
+            </div>
         </div>
-      </footer>
+    </footer>
     <div class="popup-added">
         <button class="button-close" type="button">Закрыть</button>
         <p class="popup-added-title">Товар добавлен в корзину!</p>
