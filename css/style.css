@@ -107,13 +107,15 @@ a {
 
 .header-top-nav-list {
     display: flex;
-    list-style: none;
     margin: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 .header-top-nav-list .bookmarks-link,
 .header-top-nav-list .cart-link {
     padding-left: 40px;
+    padding-right: 18px;
 }
 
 .header-top-nav-list a {
@@ -165,7 +167,6 @@ a {
     background-image: url("../img/icon/icon-bookmark.svg");
     background-size: 14px 16px;
     background-repeat: no-repeat;
-    background-position: 0 0;
     opacity: 0.3;
 }
 
@@ -215,6 +216,7 @@ a {
 .main-menu-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
     list-style: none;
     font-size: 17px;
 }
@@ -323,7 +325,7 @@ a {
     background-color: #ffffff;
 }
 
-.service {
+.service-wrapper {
     background-color: #f2f6f8;
 }
 
@@ -396,7 +398,8 @@ a {
 }
 
 .login-item-link.login {
-    padding-left: 10px;
+    position: relative;
+    padding-left: 48px;
     padding-right: 27px;
 }
 
@@ -409,9 +412,17 @@ a {
 }
 
 .login-item-link.login::before {
-    content: url("../img/icon/icon-login.svg");
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 20px;
+    height: 17px;
+    background-image: url("../img/icon/icon-login.svg");
+    background-size: 20px 17px;
+    background-repeat: no-repeat;
     opacity: 0.3;
-    margin-right: 14px;
+
 }
 
 .login-item-link.login:hover::before {
@@ -453,7 +464,8 @@ a {
 }
 
 .filter-title {
-    margin-left: 19px;
+    display: inline-block;
+    vertical-align: middle;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -461,8 +473,8 @@ a {
     text-transform: uppercase;
 }
 
-.filter-settings {
-    display: flex;
+.filter-fieldset {
+    text-decoration: none;
 }
 
 .filter-checklist {
@@ -505,9 +517,13 @@ a {
 }
 
 .filter-title-wrap {
-    width: 220px;
-    margin-top: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
     background-color: #f7f3ec;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .filter-legend {
@@ -571,17 +587,15 @@ a {
     color: #000000;
 }
 
-.sort {
-    display: flex;
-    width: 700px;
-    margin-top: 20px;
-    margin-left: 20px;
+.sort-wrapper {
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 18px;
     background-color: #f7f3ec;
     text-transform: uppercase;
-}
-
-.sort-action {
-    list-style: none;
 }
 
 .sort-title {
@@ -594,9 +608,15 @@ a {
 }
 
 .sort-by {
-    display: flex;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
     flex-wrap: wrap;
     list-style: none;
+}
+
+.sort-by-item {
+    display: inline;
 }
 
 .sort-by-link{
@@ -649,7 +669,7 @@ a {
 .search {
     padding-left: 49px;
     padding-top: 12px;
-    padding-right: 0px;
+    padding-right: 60px;
     padding-bottom: 12px;
     font-size: 17px;
     line-height: 18px;
@@ -816,6 +836,7 @@ a {
 
 .about {
     padding-top: 67px;
+    padding-bottom: 70px;
     background-color: #f4f7f9;
     color: #000000;
 }
@@ -829,6 +850,7 @@ a {
 }
 
 .about-text {
+    margin: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -888,6 +910,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
+    border-radius: 5px;
 }
 
 .button:hover {
@@ -1050,6 +1073,9 @@ a {
 
 .contact-company {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 82px;
+    margin-bottom: 86px;
 }
 
 .contact-with-us {
@@ -1057,6 +1083,7 @@ a {
 }
 
 .about-us-title {
+    margin: 0;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     font-style: normal;
@@ -1085,18 +1112,33 @@ a {
     margin-top: 36px;
 }
 
+.about-us-list {
+    margin: 0;
+}
+
 .about-us-item {
-    margin-bottom: 24px;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 18px;
     font-style: normal;
-    line-height: 20px;
+    line-height: 40px;
     text-align: left;
     color: #000000;
 }
 
+.about-us .button {
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: 24px;
+}
+
+.contact-with-us .button {
+    padding-left: 52px;
+    padding-right: 53px;
+    margin-top: 40px
+}
 
 .contact-with-us-title {
+    margin: 0;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     font-style: normal;
@@ -1107,11 +1149,16 @@ a {
 
 .contact-with-us-text {
     width: 179px;
+    margin-top: 39px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-style: normal;
     line-height: 24px;
     color: #000000;
+}
+
+.little-map {
+    margin-top: 36px;
 }
 
 .footer {
@@ -1334,4 +1381,11 @@ a {
     background-color: #f1f1f1;
 }
 
+.popup-big-map {
+    width: 940px;
+    height: 464px;
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-size: 940px 464px;
+}
 
