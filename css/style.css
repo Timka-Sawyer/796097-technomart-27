@@ -23,8 +23,11 @@ a {
 }
 
 .visually-hidden {
-    display: none;
-    visibility: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .conteiner {
@@ -392,11 +395,25 @@ a {
 
 .service-label {
     display: block;
+    width: 218px;
+    line-height: 30px;
     background-color: #32425c;
     color: #ffffff;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
     padding-left: 22px;
     padding-top: 13px;
     padding-bottom: 16px;
+    cursor: pointer;
+}
+
+.service-label:hover {
+    background: #293449;
+}
+
+.service-label:active {
+    background-color: #fff;
+    color: #32425c;
 }
 
 .service-title {
@@ -424,6 +441,15 @@ a {
 #garanty:checked ~ .service-right #service-slide-2,
 #credit:checked ~ .service-right #service-slide-3 {
   display: block;
+}
+
+#delivery:checked ~ .service-control-list .service-label[for="delivery"],
+#garanty:checked ~ .service-control-list .service-label[for="garanty"],
+#credit:checked ~ .service-control-list .service-label[for="credit"] {
+    background-color: #ffffff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #32425c;
 }
 
 .service-right-title {
@@ -1048,6 +1074,7 @@ a {
 }
 
 .slider-control-point {
+    display: flex;
     position: absolute;
     bottom: 28px;
     left: 295px;
@@ -1055,8 +1082,7 @@ a {
     font-size: 0;
 }
 
-.slider-control-point label {
-    display: inline-flex;
+.slider-point-label {
     width: 5px;
     height: 5px;
     margin-right: 8px;
@@ -1076,8 +1102,8 @@ a {
   display: block;
 }
 
-#slide-drill:checked ~ .slider-control-point label[for="slide-drill"],
-#slide-perf:checked ~ .slider-control-point label[for="slide-perf"] {
+#slide-drill:checked ~ .slider-control-point .slider-point-label[for="slide-drill"],
+#slide-perf:checked ~ .slider-control-point .slider-point-label[for="slide-perf"] {
     background-color: red;
     border: 3px solid #fff;
 }
@@ -1101,7 +1127,7 @@ a {
     padding-right: 20px;
     padding-top: 27px;
     padding-bottom: 23px;
-    background-image: url(../img/slide-image.jpg);
+    background-image: url("../img/slide-image.jpg");
     background-repeat: no-repeat;
     background-size: 620px 266px;
 }
