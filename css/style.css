@@ -1662,6 +1662,7 @@ a {
 .popup-added {
     width: 620px;
     height: 282px;
+    border-top: 7px solid red;
     box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
@@ -1713,26 +1714,49 @@ a {
 }
 
 .popup-added-button-light {
-    color: #000000;
+    margin-left: 20px;
+    display: block;
+    width: 220px;
+    background-color: #fff;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     font-style: normal;
-    text-transform: uppercase;
     line-height: 18px;
-    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.button.added {
+    width: 220px;
 }
 
 .popup-added-title {
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  line-height: 30px;
-  text-align: center;
-  color: #000000;
+    margin-top: 20px;
+    margin-left: 32px;
+    font-family: "Cuprum", "Tahoma", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
 }
 
 .popup-added-buttons-wrap {
+    display: flex;
+    padding-top: 37px;
+    padding-left: 80px;
+    padding-bottom: 37px;
     background-color: #f1f1f1;
+}
+
+.popup-added-text {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 81px;
+    margin-bottom: 49px;
 }
 
 .popup-big-map {
