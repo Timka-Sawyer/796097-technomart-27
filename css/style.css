@@ -124,6 +124,8 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
+    margin-right: 0;
+    margin-left: auto;
     padding-left: 0;
     list-style: none;
 }
@@ -139,6 +141,7 @@ a {
 }
 
 .header-top-nav-item {
+    width: 150px;
     background-color: #293449;
 }
 
@@ -360,6 +363,7 @@ a {
 .service-slider {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 65px;
 }
 
 .service-control {
@@ -370,7 +374,7 @@ a {
     content: "";
     position: absolute;
     z-index: 70;
-    top: -45px;
+    top: -32px;
     left: 230px;
     width: 15px;
     height: 284px;
@@ -435,6 +439,11 @@ a {
 
 .service-slide {
     display: none;
+    padding-left: 80px;
+}
+
+#service-slide-1 {
+    display: block;
 }
 
 #delivery:checked ~ .service-right #service-slide-1,
@@ -452,7 +461,13 @@ a {
     color: #32425c;
 }
 
+.service-right {
+    min-width: 700px;
+}
+
 .service-right-title {
+    margin-top: 12px;
+    margin-bottom: 34px;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -460,7 +475,38 @@ a {
     color: #32425c;
 }
 
+.delivery {
+    padding-bottom: 60px;
+    background-image: url(../img/delivery.png);
+    background-position: 230px 26px;
+    background-repeat: no-repeat;
+}
+
+.guarantee {
+    padding-bottom: 60px;
+    background-image: url(../img/guarantee.png);
+    background-position: 230px 26px;
+    background-repeat: no-repeat;
+}
+
+.credit {
+    padding-bottom: 60px;
+    background-image: url(../img/credit.png);
+    background-position: 230px 26px;
+    background-repeat: no-repeat;
+}
+
 .service-right-text {
+    width: 280px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 24px;
+    color: #000000;
+}
+
+.service-right-text-2 {
+    width: 222px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -583,12 +629,110 @@ a {
 
 .filter-fieldset,
 .price-fieldset {
+    padding: 0;
+    padding-bottom: 25px;
     border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-fieldset.supply {
+    border-bottom: none;
+
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    background-color: #f7f3ec;
+    
+    border-radius: 5px;
+}
+
+  .range-controls .scale {
+    height: 2px;
+  
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 85%;
+    height: 2px;
+  
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+  
+.range-controls .toggle-max {
+    left: 160px;
 }
 
 .filter-checklist {
     padding-left: 0;
     list-style: none;
+}
+
+.price-controls {
+    display: flex;
+    font-size: 0;
+}
+
+.price-controls-item {
+    width: 60px;
+    padding: 8px 18px;
+    
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+    
+    border: none;
+    border-radius: 5px;
+    background: #f7f3ec;
+}
+
+.price-item-tire {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.price-controls-item.min-price {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.price-controls-item.max-price {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .filter-label-checkbox {
@@ -830,10 +974,40 @@ a {
     background-color: #ffffff;
 }
 
+.search-form {
+    display: flex;
+}
+
+.search-img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.search-img path{
+    fill: #fff;
+    opacity: 0.3;
+}
+
+.search:hover + .search-form-button path{
+    fill: #fff;
+    opacity: 1;
+}
+
+.search:active + .search-form-button path{
+    fill: #fff;
+    opacity: 0.3;
+}
+
+.search:focus + .search-form-button path{
+    fill: #ee3643;
+    opacity: 1;
+}
+
 .search {
-    padding-left: 49px;
+    order: 2;
+    padding-left: 0;
     padding-top: 12px;
-    padding-right: 60px;
+    padding-right: 65px;
     padding-bottom: 12px;
     font-size: 17px;
     line-height: 18px;
@@ -853,7 +1027,30 @@ a {
 
 .search:focus {
     background-color: #ffffff;
+    color: #000;
+    outline: none;
 }
+
+.search-form-button {
+    padding: 0;
+    order: 1;
+    background-color: #293449;
+    border: none;
+}
+
+.search:hover + .search-form-button {
+    background-color: #212a3a;
+}
+
+.search:active + .search-form-button {
+    background-color: #293449;
+}
+
+.search:focus + .search-form-button {
+    background-color: #ffffff;
+    color: #000;
+}
+
 
 .user-profile {
     display: flex;
@@ -1356,8 +1553,10 @@ a {
 }
 
 .brand-image {
-    display: block;
-    margin: auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .contact-company {
@@ -1643,6 +1842,16 @@ a {
     color: #ee3643;
 }
 
+.button-close {
+    display: block;
+    border: none;
+    margin-right: 4px;
+    margin-top: 9px;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #ffffff00;
+}
+
 .write-to-us-text {
     margin-top: 22px;
     font-family: "Cuprum", "Tahoma", sans-serif;
@@ -1653,15 +1862,25 @@ a {
 }
 
 .popup-write-to-us {
-    margin: 50px;
+    position: fixed;
+    top: 5%;
+    left: 33%;
+    z-index: 100;
+
     width: 620px;
+    background-color: #fff;
     border-top: 7px solid red;
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .popup-added {
+    position: fixed;
+    top: 5%;
+    left: 33%;
+    z-index: 100;
     width: 620px;
     height: 282px;
+    background-color: #fff;
     border-top: 7px solid red;
     box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
@@ -1682,12 +1901,14 @@ a {
     margin-right: 0;
 }
 
-.your-name label,
-.your-email label,
-.write-to-us-text label {
+.popup-label {
     display: block;    
     line-height: 18px;
     margin-bottom: 13px;
+    font-family: "Cuprum", "Tahoma", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
 }
 
 .popup-button-send {
@@ -1706,11 +1927,21 @@ a {
 
 .name-input,
 .email-input {
-    width: 220px;
+    padding: 16px;
+    padding-top: 13px;
+    width: 188px;
+    border: solid 2px #dee3e4;
+    border-radius: 4px;
+    background-color: #ffffff;
 }
 
 .letter-input {
-    width: 460px;
+    padding: 16px;
+    padding-top: 13px;
+    width: 428px;
+    height: 114px;
+    border: solid 2px #dee3e4;
+    background-color: #ffffff;
 }
 
 .popup-added-button-light {
@@ -1760,8 +1991,13 @@ a {
 }
 
 .popup-big-map {
+    position: fixed;
+    top: 5%;
+    left: 25.3%;
+    z-index: 100;
     width: 940px;
     height: 464px;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-size: 940px 464px;

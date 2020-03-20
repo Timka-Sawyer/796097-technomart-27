@@ -13,10 +13,14 @@
           <a class="header-logo-link" href="index.html">
               <img class="header-logo-image" src="./img/main-logo.svg" alt="Логотип магазина Техномарт">
           </a>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-              <label hidden class="visually-hidden" for="search-up">Поиск</label>
-              <button class="search-form-button" type="submit"><img src="./img/icon/icon-search.svg" width="17px" height="17px" alt="Изображение лупы"></button>
-              <input class="search" type="text" name="search" id="search-up" placeholder="Поиск:">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label hidden for="search-up">Поиск</label>
+            <input class="search" type="text" name="search" id="search-up" placeholder="Поиск:">
+            <button class="search-form-button" type="submit">
+              <svg class="search-img" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path fill="currentColor" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              </svg>            
+            </button>
           </form>
           <ul class="header-top-nav-list">
               <li class="header-top-nav-item">
@@ -108,10 +112,17 @@
                 <div class="price">
                     <fieldset class="price-fieldset">
                         <legend class="filter-legend">Цена:</legend>
-                        <div class="filter-controls">
-                            <input class="form-min" type="text" name="form-min" value="0">
-                            <span>—</span>
-                            <input class="form-max" type="text" name="form-max" value="30000">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                              </div>
+                              <div class="toggle toggle-min"></div>
+                              <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <input class="price-controls-item min-price" name="min-price" type="number" value="0">
+                            <p class="price-item-tire">—</p>
+                            <input class="price-controls-item max-price" name="max-price" type="number" value="30000">
                         </div>
                     </fieldset>
                 </div>
@@ -141,7 +152,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="filter-fieldset">
+                <fieldset class="filter-fieldset supply">
                     <legend class="filter-legend">Питание:</legend>
                     <ul class="filter-checklist">
                         <li class="filter-supply-item">
@@ -393,7 +404,12 @@
             </div>
           </div>
     </footer>
-    <div class="popup-added">
+    <div class="popup-added visually-hidden">
+        <button class="button-close" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+              <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
+            </svg>
+          </button>
         <div class="popup-added-text">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
                 <circle cx="33" cy="33" r="33" fill="#63A63E"/>
