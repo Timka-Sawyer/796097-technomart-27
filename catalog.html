@@ -128,24 +128,24 @@
                     <legend class="filter-legend">Производители:</legend>
                     <ul class="filter-checklist">
                         <li class="checklist-item">
-                            <input class="filter-checkbox" type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
+                            <input class="filter-checkbox visually-hidden" type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
                             <label class="filter-label-checkbox" for="filter-bosch">Bosch</label>
                         </li>
                         <li class="checklist-item">
-                            <input class="filter-checkbox" type="checkbox" name="interscol" id="filter-interscol" value="Интерскол">
+                            <input class="filter-checkbox visually-hidden" type="checkbox" name="interscol" id="filter-interscol" value="Интерскол">
                             <label class="filter-label-checkbox" for="filter-interscol">Интерскол</label>
                         </li>
                         <li class="checklist-item">
-                            <input class="filter-checkbox" type="checkbox" name="makita" id="filter-makita" value="Makita" checked>
+                            <input class="filter-checkbox visually-hidden" type="checkbox" name="makita" id="filter-makita" value="Makita" checked>
                             <label class="filter-label-checkbox" for="filter-makita">Makita</label>
                         </li>
 
                         <li class="checklist-item">
-                            <input class="filter-checkbox" type="checkbox" name="dewalt" id="filter-dewalt" value="Dewalt">
+                            <input class="filter-checkbox visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt" value="Dewalt">
                             <label class="filter-label-checkbox" for="filter-dewalt">Dewalt</label>
                         </li>
                         <li class="checklist-item">
-                            <input class="filter-checkbox" type="checkbox" name="hitachi" id="filter-hitachi" value="Hitachi">
+                            <input class="filter-checkbox visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi" value="Hitachi">
                             <label class="filter-label-checkbox" for="filter-hitachi">Hitachi</label>
                         </li>
                     </ul>
@@ -154,11 +154,11 @@
                     <legend class="filter-legend">Питание:</legend>
                     <ul class="filter-checklist">
                         <li class="filter-supply-item">
-                            <input class="filter-radio" type="radio" name="supply" id="radio1" value="accumulator" checked>
+                            <input class="filter-radio visually-hidden" type="radio" name="supply" id="radio1" value="accumulator" checked>
                             <label class="filter-label-radio" for="radio1">Аккумуляторные</label>
                         </li>
                         <li class="filter-supply-item">
-                            <input class="filter-radio" type="radio" name="supply" id="radio2" value="lan">
+                            <input class="filter-radio visually-hidden" type="radio" name="supply" id="radio2" value="lan">
                             <label class="filter-label-radio" for="radio2">Сетевые</label>
                         </li>
                     </ul>
@@ -402,7 +402,7 @@
             </div>
           </div>
     </footer>
-    <div class="modal popup-added">
+    <div class="popup-added visually-hidden">
         <button class="button-close" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
               <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
@@ -422,18 +422,20 @@
     </div>
 
     <script>
-        var link = document.querySelector(".card-actions-add");
+        var links = document.querySelectorAll(".card-actions-add");
         var popup = document.querySelector(".popup-added");
-        var close = popup.querySelector(".button-close");
+        var addedClose = popup.querySelector(".button-close");
         
-        link.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popup.classList.add("modal-show");
-        });
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.remove("visually-hidden");
+            });
+        };
         
-        close.addEventListener("click", function (evt) {
+        addedClose.addEventListener("click", function (evt) {
           evt.preventDefault();
-          popup.classList.remove("modal-show");
+          popup.classList.add("visually-hidden");
         });
     </script>
 

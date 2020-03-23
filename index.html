@@ -325,7 +325,7 @@
             <ul class="footer-nav-top-list">
               <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Компания</a></li>
               <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Новости</a></li>
-              <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Каталог</a></li>
+              <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="./catalog.html">Каталог</a></li>
               <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Доставка</a></li>
               <li class="footer-nav-top-item"><a class="footer-nav-top-item-link" href="">Контакты</a></li>
             </ul>
@@ -376,7 +376,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal popup-write-to-us">
+    <div class="popup-write-to-us visually-hidden">
       <button class="button-close" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
           <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
@@ -402,7 +402,7 @@
         </div>
       </form>
     </div>
-    <div class="modal popup-big-map">
+    <div class="popup-big-map visually-hidden">
       <button class="button-close" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
           <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
@@ -417,12 +417,12 @@
       
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.add("modal-show");
+        popup.classList.remove("visually-hidden");
       });
       
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.remove("modal-show");
+        popup.classList.add("visually-hidden");
       });
 
 
@@ -432,12 +432,12 @@
 
       mapLink.addEventListener("click", function (evt) {
         evt.preventDefault();
-        mapPopup.classList.add("modal-show");
+        mapPopup.classList.remove("visually-hidden");
       });
       
       mapClose.addEventListener("click", function (evt) {
         evt.preventDefault();
-        mapPopup.classList.remove("modal-show");
+        mapPopup.classList.add("visually-hidden");
       });
     </script>
 
