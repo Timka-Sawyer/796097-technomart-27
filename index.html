@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&#x0007C;PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -11,7 +11,7 @@
       <div class="header-top">
         <div class="conteiner header-top-wrapper">
           <a class="header-logo-link" href="index.html">
-              <img class="header-logo-image" src="./img/main-logo.svg" width="109px" height="19px" alt="Логотип магазина Техномарт">
+              <img class="header-logo-image" src="./img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <label hidden for="search-up">Поиск</label>
@@ -48,7 +48,7 @@
           </p>
           <div class="header-data">
             <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="header-addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
             <div class="user-wrapper">
               <div class="user-login">
@@ -92,6 +92,16 @@
                   <label class="slider-point-label" for="slide-drill">Дрели</label>
                   <label class="slider-point-label" for="slide-perf">Перфораторы</label>
                 </div>
+                <button class="slider-left" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                    <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
+                  </svg>                
+                </button>
+                <button class="slider-right" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                    <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
+                  </svg>                               
+                </button>
                 <div class="slides">
                   <div class="slide" id="slide-1">
                     <div class="slide-text">
@@ -143,7 +153,7 @@
                 </div>
                 <div class="card-title">Перфоратор BOSCH BFG 2000</div>
                 <div class="card-price-old"></div>
-                <div class="card-price-new" href="">12500 Р.</div>  
+                <div class="card-price-new">12500 Р.</div>  
               </article>
             </li>
             <li class="populars-item">
@@ -157,7 +167,7 @@
                 </div>
                 <div class="card-title">Перфоратор Bosch BFG 3000</div>
                 <div class="card-price-old">22500 Р.</div>
-                <div class="card-price-new" href="">15500 Р.</div>  
+                <div class="card-price-new">15500 Р.</div>  
               </article>
             </li>
             <li class="populars-item">
@@ -171,7 +181,7 @@
                 </div>
                 <div class="card-title">Перфоратор BOSCH BFG 6000</div>
                 <div class="card-price-old">30500 Р.</div>
-                <div class="card-price-new" href="">25500 Р.</div>  
+                <div class="card-price-new">25500 Р.</div>  
               </article>
             </li>
             <li class="populars-item">
@@ -185,7 +195,7 @@
                 </div>
                 <div class="card-title">Перфоратор BOSCH BFG 2000</div>
                 <div class="card-price-old"></div>
-                <div class="card-price-new" href="">12500 Р.</div>  
+                <div class="card-price-new">12500 Р.</div>  
               </article>
             </li>
           </ul>
@@ -299,7 +309,7 @@
             <div class="little-map">
               <a class="little-map-link" href=""><img src="./img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8"></a>
             </div>
-            <a class="button" href="">Заблудились? Напишите нам!</a>
+            <a class="button write-to-us" href="">Заблудились? Напишите нам!</a>
           </div>
         </section>
       </div>
@@ -308,7 +318,7 @@
       <div class="conteiner">
         <div class="footer-top">
           <div class="footer-address">
-            <a class="footer-logo-link" href="index.html"><img class="footer-logo-image" src="./img/icon/bottom-logo.svg" width="138px" height="23px" alt="Логотип магазина Техномарт"></a>
+            <a class="footer-logo-link" href="index.html"><img class="footer-logo-image" src="./img/icon/bottom-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
             <p class="footer-adress-text">г. Санкт-Петербург, ул . Б. Конюшенная, д. 19/8 <a class="footer-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p> 
           </div>
           <div class="footer-nav">
@@ -366,7 +376,7 @@
         </div>
       </div>
     </footer>
-    <div class="popup-write-to-us visually-hidden">
+    <div class="modal popup-write-to-us">
       <button class="button-close" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
           <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
@@ -392,12 +402,44 @@
         </div>
       </form>
     </div>
-    <div class="popup-big-map visually-hidden">
+    <div class="modal popup-big-map">
       <button class="button-close" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
           <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
         </svg>
       </button>
     </div>
+
+    <script>
+      var link = document.querySelector(".button.write-to-us");
+      var popup = document.querySelector(".popup-write-to-us");
+      var close = popup.querySelector(".button-close");
+      
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+      
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+
+
+      var mapLink = document.querySelector(".little-map-link");
+      var mapPopup = document.querySelector(".popup-big-map");
+      var mapClose = mapPopup.querySelector(".button-close");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+      
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+    </script>
+
   </body>
 </html>
