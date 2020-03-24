@@ -503,6 +503,8 @@ display: flex;
 .service-input:checked + .service-label {
     background-color: #fff;
     color: #32425c;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
 }
 
 .service-input:focus + .service-label {
@@ -590,7 +592,7 @@ display: flex;
 }
 
 .service-right-text {
-    width: 374px;
+    width: 277px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-style: normal;
