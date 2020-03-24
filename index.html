@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&#x0007C;PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&#x0007C;PT+Sans:400,400i,700,700i&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -84,7 +84,7 @@
               <h2 class="categorys-item-title">Инструмент</h2>
               <a class="categorys-item-link" href="">На все случаи</a>
             </article>
-            <article сlass="slider">
+            <article>
               <div class="slider-x">
                 <input class="visually-hidden" type="radio" id="slide-drill" name="slider-control" checked>
                 <input class="visually-hidden" type="radio" id="slide-perf" name="slider-control">
@@ -242,13 +242,16 @@
           </p>
           <div class="service-slider">
             <div class="service-control">
-              <input class="visually-hidden" type="radio" id="delivery" name="srvice-slider-control" checked>
-              <input class="visually-hidden" type="radio" id="garanty" name="srvice-slider-control">
-              <input class="visually-hidden" type="radio" id="credit" name="srvice-slider-control">
               <ul class="service-control-list">
-                <li class="service-item"><label class="service-label" for="delivery">Доставка</label></li>
-                <li class="service-item"><label class="service-label" for="garanty">Гарантия</label></li>
-                <li class="service-item"><label class="service-label" for="credit">Кредит</label></li>
+                <li class="service-item">
+                  <input class="service-input visually-hidden" type="radio" id="delivery" name="srvice-slider-control" checked>
+                  <label class="service-label" for="delivery">Доставка</label></li>
+                <li class="service-item">
+                  <input class="service-input visually-hidden" type="radio" id="garanty" name="srvice-slider-control">
+                  <label class="service-label" for="garanty">Гарантия</label></li>
+                <li class="service-item">
+                  <input class="service-input visually-hidden" type="radio" id="credit" name="srvice-slider-control">
+                  <label class="service-label" for="credit">Кредит</label></li>
               </ul>
             </div>
             <div class="service-right">
@@ -284,7 +287,7 @@
       <div class="conteiner">
         <section class="contact-company">
           <div class="about-us">
-            <h2 class="about-us-title">Компания "Техномарт"</h2>
+            <h2 class="about-us-title">Компания &#171;Техномарт&#187;</h2>
             <p class="about-us-text-1">
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
               строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
