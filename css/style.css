@@ -500,6 +500,11 @@ display: flex;
     color: #32425c;
 }
 
+.service-input:checked + .service-label {
+    background-color: #fff;
+    color: #32425c;
+}
+
 .service-input:focus + .service-label {
     background-color: #fff;
     color: #32425c;
@@ -509,6 +514,7 @@ display: flex;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     font-style: normal;
+    letter-spacing: -0.9px;
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
@@ -584,17 +590,7 @@ display: flex;
 }
 
 .service-right-text {
-    width: 280px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    line-height: 24px;
-    color: #000000;
-}
-
-.service-right-text-2 {
-    margin-top: -13px;
-    width: 222px;
+    width: 374px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -1023,6 +1019,7 @@ display: flex;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     font-style: normal;
+    letter-spacing: -1.3px;
     line-height: 30px;
     color: #32425c;
     text-transform: uppercase;
@@ -1515,6 +1512,7 @@ display: flex;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+    letter-spacing: -0.52px;
     line-height: 30px;
     margin-top: 0;
 }
@@ -1886,6 +1884,7 @@ display: flex;
     font-size: 30px;
     font-style: normal;
     line-height: 30px;
+    letter-spacing: -0.8px;
     color: #000000;
     text-transform: uppercase;
 }
@@ -1954,6 +1953,7 @@ display: flex;
     font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     font-style: normal;
+    letter-spacing: -0.5px;
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
